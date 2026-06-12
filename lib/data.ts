@@ -93,6 +93,7 @@ export const projects: ProjectItem[] = [
     role: "Backend Developer",
     period: "January 2026 – April 2026",
     teamSize: 5,
+    repoUrl: "https://github.com/plant-decor/KLTN_PlantDecor_BE",
     description:
       "An e-commerce and interior green design service platform with an AI assistant that provides semantic product recommendations and plant consulting based on user context.",
     tech: [

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Badge from "./Badge";
 import type { ProjectItem } from "@/lib/data";
-import { FiUsers, FiLock } from "react-icons/fi";
+import { FiUsers, FiLock, FiGithub } from "react-icons/fi";
 import { MdCheckCircleOutline } from "react-icons/md";
 
 interface ProjectCardProps {
@@ -62,10 +62,22 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             <FiUsers className="text-neon-purple" />
             <span>Team of {project.teamSize}</span>
           </div>
-          <div className="flex items-center gap-1.5 text-xs text-muted">
-            <FiLock className="text-neon-purple/60" />
-            <span>Private Repository</span>
-          </div>
+          {project.repoUrl ? (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 text-xs text-muted hover:text-neon-purple transition-colors"
+            >
+              <FiGithub className="text-neon-purple" />
+              <span>View on GitHub</span>
+            </a>
+          ) : (
+            <div className="flex items-center gap-1.5 text-xs text-muted">
+              <FiLock className="text-neon-purple/60" />
+              <span>Private Repository</span>
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
