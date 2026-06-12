@@ -40,7 +40,8 @@ export default function Education() {
             <div className="flex justify-between text-sm">
               <span className="text-muted font-mono text-xs">GPA</span>
               <span className="gradient-text font-bold">
-                {education.gpa} / {education.gpaMax}
+                {education.gpa}/{education.gpaMax}
+                <span className="text-muted text-xs font-normal ml-1">({education.gpaNote})</span>
               </span>
             </div>
             <div className="h-2 bg-border rounded-full overflow-hidden">

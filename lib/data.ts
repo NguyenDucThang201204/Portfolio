@@ -5,6 +5,7 @@ export const personal = {
   phone: "0967175376",
   location: "Tan Binh District, Ho Chi Minh City",
   linkedin: "https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BA%AFng-4927a9304",
+  github: "https://github.com/NguyenDucThang201204",
   dob: "20/12/2004",
 };
 
@@ -128,14 +129,16 @@ export interface EducationItem {
   period: string;
   gpa: string;
   gpaMax: string;
+  gpaNote: string;
 }
 
 export const education: EducationItem = {
   institution: "FPT University",
   degree: "Computer Software Engineering",
   period: "October 2022 – July 2026 (Expected)",
-  gpa: "3.3",
-  gpaMax: "4.0",
+  gpa: "8.39",
+  gpaMax: "10",
+  gpaNote: "~3.36/4.0",
 };
 
 export interface AwardItem {
