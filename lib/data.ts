@@ -16,7 +16,7 @@ export interface SkillGroup {
 export const skills: SkillGroup[] = [
   {
     group: "Languages",
-    items: ["C#", "TypeScript"],
+    items: ["C#"],
   },
   {
     group: "Backend",
