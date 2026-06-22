@@ -4,7 +4,6 @@ export const personal = {
   email: "thangnguyenduc2004@gmail.com",
   phone: "0967175376",
   location: "Tan Binh District, Ho Chi Minh City",
-  linkedin: "https://www.linkedin.com/in/nguy%E1%BB%85n-th%E1%BA%AFng-4927a9304",
   github: "https://github.com/NguyenDucThang201204",
   dob: "20/12/2004",
 };

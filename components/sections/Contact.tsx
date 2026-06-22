@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import SectionWrapper, { itemVariants } from "@/components/ui/SectionWrapper";
 import { personal } from "@/lib/data";
 import { FiMail, FiPhone, FiMapPin, FiGithub } from "react-icons/fi";
-import { FaLinkedin } from "react-icons/fa";
 
 const contactLinks = [
   {
@@ -20,14 +19,6 @@ const contactLinks = [
     value: personal.phone,
     href: `tel:${personal.phone}`,
     isPrimary: false,
-  },
-  {
-    icon: FaLinkedin,
-    label: "LinkedIn",
-    value: "nguyễn-thắng-4927a9304",
-    href: personal.linkedin,
-    isPrimary: false,
-    external: true,
   },
   {
     icon: FiGithub,
